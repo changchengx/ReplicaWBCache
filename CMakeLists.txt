@@ -46,3 +46,4 @@ include_directories(BEFORE SYSTEM ${Boost_INCLUDE_DIRS})
 
 # Add sub directories
 add_subdirectory(common)
+add_subdirectory(test)
