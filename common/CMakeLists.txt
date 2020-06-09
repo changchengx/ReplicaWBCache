@@ -5,3 +5,6 @@ project(common)
 
 add_subdirectory(spec_assert)
 add_library(common::libassert ALIAS spec_assert)
+
+add_subdirectory(arch)
+add_library(common::libarch ALIAS arch)
