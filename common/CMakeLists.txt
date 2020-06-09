@@ -10,6 +10,9 @@ add_subdirectory(arch)
 add_subdirectory(crc32)
 add_library(common::libarch ALIAS crc32)
 
+add_subdirectory(buffer)
+add_library(common::libbuffer ALIAS buffer)
+
 add_library(compat SHARED
     safe_io.c
 )
