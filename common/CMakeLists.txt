@@ -17,3 +17,6 @@ add_library(common::libcompat ALIAS compat)
 target_include_directories(compat
     PUBLIC ${CMAKE_SOURCE_DIR}/include
 )
+
+add_subdirectory(encode)
+add_library(common::libencode ALIAS encode)
