@@ -43,3 +43,6 @@ else()
     message(SEND_ERROR "Please install Boost 1.71.0 in system")
 endif()
 include_directories(BEFORE SYSTEM ${Boost_INCLUDE_DIRS})
+
+# Add sub directories
+add_subdirectory(common)
